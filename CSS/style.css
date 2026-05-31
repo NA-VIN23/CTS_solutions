@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+/* Universal Selector */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #f4f4f4 url('background.jpg');
+    color: #333333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* Header Styles */
+#mainHeader {
+    background: linear-gradient(to right, #0066cc, #00aaff);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+/* Element Selector Example */
+h2 {
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+/* Grouping Selector Example */
+h3,
+p {
+    margin-bottom: 10px;
+}
+
+/* Navigation Styles */
+nav {
+    background-color: #222;
+    margin-bottom: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    list-style-position: inside;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+    padding: 15px;
+    margin: 5px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Link Pseudo Classes */
+a:link {
+    color: white;
+}
+
+a:visited {
+    color: lightgray;
+}
+
+a:hover {
+    color: yellow;
+}
+
+a:active {
+    color: red;
+}
+
+/* Event Card Styles */
+.eventCard {
+    border: 2px solid #cccccc;
+    padding: 20px;
+    margin: 20px 0;
+    background-color: #ffffff;
+    border-radius: 8px;
+}
+
+/* Typography Styles */
+.description {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    text-align: justify;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    line-height: 1.8;
+}
+
+/* Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+th {
+    background-color: #007BFF;
+    color: white;
+}
+
+th,
+td {
+    border: 1px solid #cccccc;
+    padding: 10px;
+}
+
+/* Zebra Striping */
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Form Styles */
+form {
+    margin-top: 15px;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+/* Outline Example */
+input:focus,
+select:focus,
+textarea:focus {
+    outline: 3px solid #007BFF;
+}
+
+/* Multi Column Layout */
+.newsArticle {
+    column-count: 2;
+    column-gap: 30px;
+    column-rule: 1px solid gray;
+    margin-top: 15px;
+}
+
+/* Visibility Hidden Example */
+.hidden-example {
+    visibility: hidden;
+}
+
+/* Display None Example */
+.none-example {
+    display: none;
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    margin-top: 30px;
+    padding: 15px;
+    background-color: #222;
+    color: white;
+}
+
+/* Image Styles */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+
+    nav ul li {
+        display: block;
+        width: 100%;
+    }
+
+    body {
+        font-size: 90%;
+    }
+
+    .newsArticle {
+        column-count: 1;
+    }
+
+    .eventCard {
+        margin: 10px 0;
+    }
+
+    img {
+        width: 80%;
+    }
+}

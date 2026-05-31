@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local Community Event Portal</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        body {
+            background-color: #f4f4f4;
+        }
+    </style>
+</head>
+<body>
+
+    <h1 style="color:red;">Local Community Event Portal</h1>
+
+    <header id="mainHeader">
+        <h2>Welcome to Our Community Events</h2>
+        <p>Stay updated with upcoming events and activities.</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#events">Events</a></li>
+            <li><a href="#schedule">Schedule</a></li>
+            <li><a href="#register">Register</a></li>
+            <li><a href="#news">News</a></li>
+        </ul>
+    </nav>
+
+    <section id="events">
+        <h2>Upcoming Events</h2>
+
+        <div class="eventCard">
+            <h3>Community Clean-Up Drive</h3>
+            <p class="description">
+                Join volunteers to help clean local parks and public spaces.
+            </p>
+        </div>
+
+        <div class="eventCard">
+            <h3>Food Festival</h3>
+            <p class="description">
+                Enjoy delicious food from local vendors and restaurants.
+            </p>
+        </div>
+
+        <div class="eventCard">
+            <h3>Sports Day</h3>
+            <p class="description">
+                Participate in exciting sports and recreational activities.
+            </p>
+        </div>
+    </section>
+
+    <section id="schedule">
+        <h2>Event Schedule</h2>
+
+        <table>
+            <tr>
+                <th>Event</th>
+                <th>Date</th>
+                <th>Time</th>
+            </tr>
+
+            <tr>
+                <td>Clean-Up Drive</td>
+                <td>10 June 2026</td>
+                <td>9:00 AM</td>
+            </tr>
+
+            <tr>
+                <td>Food Festival</td>
+                <td>15 June 2026</td>
+                <td>11:00 AM</td>
+            </tr>
+
+            <tr>
+                <td>Sports Day</td>
+                <td>20 June 2026</td>
+                <td>8:00 AM</td>
+            </tr>
+        </table>
+    </section>
+
+    <section id="register">
+        <h2>Event Registration</h2>
+
+        <form>
+            <label>Full Name:</label><br>
+            <input type="text" name="fullname" required><br><br>
+
+            <label>Email:</label><br>
+            <input type="email" name="email" required><br><br>
+
+            <label>Select Event:</label><br>
+            <select>
+                <option>Community Clean-Up Drive</option>
+                <option>Food Festival</option>
+                <option>Sports Day</option>
+            </select><br><br>
+
+            <label>Comments:</label><br>
+            <textarea rows="4" cols="40"></textarea><br><br>
+
+            <input type="submit" value="Register">
+        </form>
+    </section>
+
+    <section id="news">
+        <h2>Community Bulletin</h2>
+
+        <div class="newsArticle">
+            Our local community continues to grow with exciting activities,
+            volunteer opportunities, educational workshops, cultural programs,
+            environmental awareness campaigns, sports competitions, and public
+            engagement events. Residents are encouraged to participate and
+            contribute towards creating a vibrant and inclusive neighborhood.
+            Community leaders are also planning future initiatives aimed at
+            youth development, health awareness, and environmental sustainability.
+        </div>
+    </section>
+
+    <p class="hidden-example">
+        This text uses visibility:hidden.
+    </p>
+
+    <p class="none-example">
+        This text uses display:none.
+    </p>
+
+    <footer>
+        <p>&copy; 2026 Local Community Event Portal</p>
+    </footer>
+
+</body>
+</html>
